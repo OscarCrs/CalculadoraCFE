@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.VistaResultados">
+
+    <TextView
+        android:id="@+id/lblResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADOS"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/txtKwConsumidos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salida: KW consumidos"
+        android:textSize="18sp"
+        android:padding="14dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/lblResultados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/txtRecibo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Salida: Recibo de pago"
+        android:textSize="18sp"
+        android:padding="14dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/txtKwConsumidos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
